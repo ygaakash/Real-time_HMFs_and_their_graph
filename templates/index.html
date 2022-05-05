@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Real-time HMFR and Drawing their Graphs</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">"Real-Time Handwritten Maths Functions recognition and Drawing their Graphs."</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Webcam and Graph</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Real-time HMFR</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Recognizing the Maths Functions at real time and drawing their graphs.</h2>
+                        <a class="btn btn-primary" href="#about">About</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">About</h2>
+                        <p class="text-white-50">
+This is an expanded system for the real time recognition of handwritten Mathematical Functions. This system recovers a function from its moments and then constructs the graph in constant time when the pen is lifted. This system reads and draws the graphs of dozens of handwritten mathematical functions way before an image or manual input is fed by the user using Optical character Recognition (OCR) or other existing traditional systems.
+
+
+This tool makes math a way more understandable and easy to teach. Math is the subject that every one of us at kid once hated the most. Math is not a subject to be hated. It is indeed the most logical, important, and interesting subject to learn. And this system intends to make math thrilling and entertaining as well.
+
+
+This system enhances the interesting way to study in the way that computer screen cannot deliver. It helps in making the learning very effective and interesting.
+
+
+We believe this is the future of teaching because it enhances the process of education by creating a new learning experience and better quality of teaching.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/graph1.jpeg" alt="..." />
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+
+
+
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                
+                    <!-- Css  -->
+                    
+                    <style>
+                *, (moa)before, (moa)after {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                  }
+                
+                  body{
+                      font-family: sans-serif;
+                      font-size: 1.5rem;
+                      background-color: rgb(69, 236, 241);
+                      
+                  }
+                
+                .main{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    width: 100vw;
+                }
+                
+                .header{
+                    position: relative;
+                    top:-10px;
+                    margin-bottom: 15px;
+                }
+                .header p{
+                    font-size: 2.6rem;
+                    color: rgb(243, 56, 56);
+                }
+                
+                .second{
+                    padding-left: 10%;
+                }
+                .body{
+                    display: flex;
+                    width: 100%;
+                    height: 80%;
+                    justify-content: space-around;
+                }
+                
+                .text,.graph{
+                    height: 100%;
+                    width: 40%;
+                 }
+                
+                .text>div{
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 5px;
+                }
+                
+                
+                button{
+                    color: white;
+                    border-radius: 10px;
+                    outline: 0;
+                    border: 0;
+                    box-shadow: 2px 2px rgba(96, 95, 96, 0.5);
+                    font-size: 2rem;
+                    padding: 5px 10px;
+                    background-color: rgb(32, 33, 67);
+                    transition: all .2s;
+                }
+                button:hover{
+                    cursor: pointer;
+                }
+                
+                button:active {
+                    transform: scale(0.98);
+                    /* Scaling button to 0.98 to its original size /
+                    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+                    / Lowering the shadow */
+                }
+                
+                .text p,.graph p{
+                    font-size: 2rem;
+                }
+                
+                .graph p{
+                    margin-bottom: 15px;
+                }
+                
+                .text section>div:first-child{
+                    height: 50%;
+                    border-bottom:3px solid black;
+                    }
+                
+                .canvas_box{
+                    min-height: 50%;
+                    padding: 5px;
+                    border-bottom: 1.7px  solid black;
+                 }    
+                .text>section,.graph>div{
+                    border-left: 1.7px  solid black;
+                    border-right: 1.7px  solid black;
+                    border-top: 1.7px  solid black;
+                
+                    height: 80%;
+                }
+                
+                .graph>div{
+                    border-bottom: 1.7px  solid black;
+                }
+                
+                .footer{
+                    font-size: 1.2rem;
+                    position: absolute;
+                    bottom: 0;
+                    text-align: center;
+                }
+                .footer p:last-child{
+                    padding-left: 19px;
+                }
+                
+                .active_camera{
+                    border-top: .5px solid black;;
+                }
+                .active_camera,.active_canvas{
+                    box-shadow: 2px 1px 20px .5px rgba(0, 0, 0, 0.24);
+                    border-left:.5px solid black;
+                    border-right:.5px solid black;
+                    transition: all .2s;
+                }
+                
+                .active_canvas{
+                    outline: 0;
+                    border-bottom:2.5px solid black;
+                    box-shadow: 2px 1px 20px .5px rgba(0, 0, 0, 0.24);
+                }
+                
+                .active_canvas:focus{
+                    outline: 0;
+                    box-shadow: 2px 1px 20px .5px rgba(0, 0, 0, 0.24);
+                
+                }
+                    </style>
+                
+                    <!-- Css -->
+                </head>
+                <body>
+                    <section class="main">
+                
+                        <!-- Heading -->
+                        <section class="header">
+                            <p>Real Time Recognition of Handwritten </p>
+                               <p class="second"> Math function and their Graph</p>
+                        </section>
+                
+                        <!-- Main body -->
+                        <section class="body">
+                
+                            <!-- Text area -->
+                            <section class="text">
+                                <div><button class="btn_camera">Camera</button> <button  class="btn_canvas">Canvas</button></div>
+                                    <div class="camera_box">
+                                        <div style="justify-content: center; display: flex; margin-top: 60px;"></div>
+                                        <img src="{{ url_for('video') }}"></div>
+                                    </div>
+                                    <div class="canvas_box" contenteditable>
+                                    </div>
+                            </section>
+                
+                            <!-- Graph area -->
+                            <section class="graph">
+                                <p>Graph:</p>
+                                <p>
+                                <!--Graph Here -->
+                                <img src="static/assets/img/graphfinal.jpg" width="550" height="480" />
+                                </p>
+                            </section>
+                
+                        </section>
+                </section>
+                </section>
+                </body>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Kalimati, Bagamati, Nepal</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">thejkal@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">+977- 98********</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Aakash | Jenish | Kapur | Lokesh</div></footer>
+    </body>
+</html>
